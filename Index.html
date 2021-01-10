@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>Stock Market Simulator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Images/stock-1863880_1920.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-dark-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-dark-grey">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-dark-grey">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/trading" class="w3-button w3-block w3-dark-grey">Trading Centre</a>
+        </div>
+    <div class="w3-col s3">
+      <a href="newsfeed.html" class="w3-button w3-block w3-dark-grey">Newsfeed</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Stock Market<br>Simulator</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-black w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h3 class="w3-center w3-padding-50"><span class="w3-tag w3-wide">Stock Market Simulator</span></h3>
+    <h5 class="w3-center w3-padding-20"><span class="w3-tag">What is a stock Market Simulator?</span></h5>
+    <p> A stock Market Simulator is a virtual Game in which students are be able to invest unreal money and gain experience about the stock market interactively. The top 100 stocks from the New York Stock Exchange and NASDAQ are displayed in which players will be able to trade their stocks and grow their portfolio. Players can also collect some important information about the stock market from our persnalised newsfeed.</p>
+    <h5 class="w3-center w3-padding-20"><span class="w3-tag">Who is this Game for?</span></h5>
+        <p> This game is made for high school students who are interested in learning more about economics, and the stock market. This game provides them with understanding of the stock market and how they can better use their funds</p>
+        <h5 class="w3-center w3-padding-20"><span class="w3-tag">How does it Work?</span></h5>
+        <p> A player gets to invest in the top 100 stocks from NASDAQ and NYSE, they can sell the stocks when they see good value in them and grow their portfolio. They can buy more stocks when the value is down, to make more profit! To buy a stock simply click the 'buy' button, and to sell a stock click the 'sell' button</p>
+    <h5 class="w3-center w3-padding-20"><span class="w3-tag">Aim of the game</span></h5>
+        <p>This game aims to help the students be more involved in what they learn, through this game they  see the real-world applications to their  theoritical learning done in classrooms. </p>
+        <h5 class="w3-center w3-padding-20"><span class="w3-tag">Why is this game important?</span></h5>
+        <p>Learning about stock markets helps the students understand investing in their long term plans. Which would help them grow their wealth. Teaching students about the stock market gets them mentally prepared for their personal finance. It also provides a better understanding to the students about how a comapny functions and how their value can fluctuate.</p>
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-large">
+  <p> Made by Arsh Shrivastava for MYP Personal Project</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

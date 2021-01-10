@@ -1,0 +1,56 @@
+
+
+table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+    width: 500px;  
+    font-family: Open-sans, sans-serif;
+    color: white;
+    text-align: center;
+    border-color: white;
+    vertical-align: top;
+    margin-left: auto;
+  margin-right: auto;
+   
+   }
+  
+   tr:hover {background-color: grey}
+
+   th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: grey;
+
+   }
+
+  
+
+   caption {
+
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+   }
+   h1 {
+
+    text-align: center;
+    font-family: Open-sans, sans-serif;
+
+   }
+
+
+   title {
+    
+    font-family: Open-sans, sans-serif;
+    text-align: center;
+
+   }
+
+   body {
+     background-color: black;
+     color: white;
+     
+   }
+
+   
